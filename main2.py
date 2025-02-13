@@ -41,7 +41,7 @@ word_array = load_to_array(data)
 graph = build_graph(word_array)
 
 
-input_word = "Muro de"
+input_word = input("Ingresa palabra: ")
 predictions = predict_next_word(graph, input_word)
 
 print(f"{input_word} {predictions}")
