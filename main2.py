@@ -40,8 +40,8 @@ data = get_data()
 word_array = load_to_array(data)
 graph = build_graph(word_array)
 
+while True:
+    input_word = input("Ingresa palabra: ")
+    predictions = predict_next_word(graph, input_word)
 
-input_word = input("Ingresa palabra: ")
-predictions = predict_next_word(graph, input_word)
-
-print(f"{input_word} {predictions}")
+    print(f"{input_word} {predictions}")
