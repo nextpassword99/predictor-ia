@@ -33,7 +33,7 @@ def predict_next_word(graph, word):
     sorted_successors = sorted(
         successors.items(), key=lambda x: x[1]['weight'], reverse=True)
 
-    return [w[0] for w in sorted_successors[:top_n]]
+    return sorted_successors
 
 
 data = get_data()
