@@ -25,7 +25,7 @@ def build_graph(data):
     return G
 
 
-def predict_next_word(graph, word, top_n=3):
+def predict_next_word(graph, word):
     if word not in graph:
         return []
 
